@@ -185,7 +185,7 @@ def run_a_trial():
         trials=trials,
         max_evals=max_evals
     )
-    pickle.dump(trials, open("results_real_gan_v1.pkl", "wb"))
+    pickle.dump(trials, open("results.pkl", "wb"))
 
     print("\nOPTIMIZATION STEP COMPLETE.\n")
 

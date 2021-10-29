@@ -83,8 +83,8 @@ OPTIMIZER_STR_TO_CLASS = {
 num_classes = 4
 img_rows, img_cols = 224,224
 batch_size =16
-train_data_dir ="/home/cvpia/felix_work/Fall2021_journal/Datasets/topos_GAN+REAL/alpha/train_test/train/"
-validation_data_dir = "/home/cvpia/felix_work/Fall2021_journal/Datasets/topos_GAN+REAL/alpha/train_test/test/"
+train_data_dir ="/home/cvpia/felix_work/Fall2021_journal/Datasets/topos_GAN+REAL/stack/train_test/train/"
+validation_data_dir = "/home/cvpia/felix_work/Fall2021_journal/Datasets/topos_GAN+REAL/stack/train_test/test/"
 
 # Let's use some data augmentaiton 
 train_datagen = ImageDataGenerator()
