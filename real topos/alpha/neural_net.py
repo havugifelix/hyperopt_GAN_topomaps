@@ -83,8 +83,8 @@ OPTIMIZER_STR_TO_CLASS = {
 num_classes = 4
 img_rows, img_cols = 224,224
 batch_size =16
-train_data_dir ="/home/cvpia/felix_work/Fall2021_journal/Datasets/topos_GAN+REAL/stack/train_test/train/"
-validation_data_dir = "/home/cvpia/felix_work/Fall2021_journal/Datasets/topos_GAN+REAL/stack/train_test/test/"
+train_data_dir ="/home/cvpia/felix_work/Fall2021_journal/Datasets/real_topos/alpha/train_test/train"
+validation_data_dir = "/home/cvpia/felix_work/Fall2021_journal/Datasets/real_topos/alpha/train_test/test/"
 
 # Let's use some data augmentaiton 
 train_datagen = ImageDataGenerator()
@@ -134,9 +134,10 @@ def build_and_train(hype_space, save_best_weights=False, log_for_tensorboard=Fal
     callbacks = []
 
     # Weight saving callback:
+    WEIGHTS_DIR="/home/cvpia/felix_work/Fall2021_journal/Modelling/hyperopt/real topos/alpha/"
     if save_best_weights:
         weights_save_path = os.path.join(
-            WEIGHTS_DIR, '{}_Theta_hyp_v1.h5'.format(model_uuid))
+            WEIGHTS_DIR, '{}_Real_Theta_hyp.h5'.format(model_uuid))
         print("Model's weights will be saved to: {}".format(weights_save_path))
         if not os.path.exists(WEIGHTS_DIR):
             os.makedirs(WEIGHTS_DIR)

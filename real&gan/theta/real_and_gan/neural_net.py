@@ -133,6 +133,7 @@ def build_and_train(hype_space, save_best_weights=False, log_for_tensorboard=Fal
     callbacks = []
 
     # Weight saving callback:
+    WEIGHTS_DIR="/home/cvpia/felix_work/Fall2021_journal/Modelling/hyperopt/real&gan/theta/"
     if save_best_weights:
         weights_save_path = os.path.join(
             WEIGHTS_DIR, '{}_Theta_hyp_v1.h5'.format(model_uuid))
